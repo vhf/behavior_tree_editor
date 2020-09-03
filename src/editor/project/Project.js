@@ -94,41 +94,47 @@
         description  : 'Takes one child and succeeds regardless of its outcome.',
       },
       {
-        name         : 'runner',
+        name         : 'atom',
         category     : 'action',
-        title        : 'Module.function(1, 2, 3)',
-        description  : 'An action that calls the function specified in the title (must be in valid Elixir terms).  The title can contain "template variables" (like `{{mod}}.rename({{new_name}}, true)`) which will be replaced with corresponding values looked up on the parent tree.',
+        title        : ':atom',
+        description  : 'Returns an atom',
       },
-      {
-        name         : 'wait',
-        category     : 'action',
-        title        : 'wait(1)',
-        description  : '"Pauses" the bot for the specified number of seconds.  You can specify two numbers (like `wait(1,10)`) to wait a random number of seconds between those numbers.',
-      },
-      {
-        name         : 'error',
-        category     : 'action',
-        title        : 'error("Oops...")',
-        description  : 'Raises an error with the supplied message.',
-      },
-      {
-        name         : 'log',
-        category     : 'action',
-        title        : 'log("Info...")',
-        description  : 'Logs the specified message.',
-      },
-      {
-        name         : 'succeed_rate',
-        category     : 'action',
-        title        : 'succeed_rate(0.5)',
-        description  : 'Succeeds randomly at the specified rate, expressed as a number between 0 and 1.  For example, a rate of 0.25 will succeed one out of every 4 times on average.',
-      },
-      {
-        name         : 'done',
-        category     : 'action',
-        title        : 'done()',
-        description  : 'Stops the behavior tree.',
-      },
+      // {
+      //   name         : 'runner',
+      //   category     : 'action',
+      //   title        : 'Module.function(1, 2, 3)',
+      //   description  : 'An action that calls the function specified in the title (must be in valid Elixir terms).  The title can contain "template variables" (like `{{mod}}.rename({{new_name}}, true)`) which will be replaced with corresponding values looked up on the parent tree.',
+      // },
+      // {
+      //   name         : 'wait',
+      //   category     : 'action',
+      //   title        : 'wait(1)',
+      //   description  : '"Pauses" the bot for the specified number of seconds.  You can specify two numbers (like `wait(1,10)`) to wait a random number of seconds between those numbers.',
+      // },
+      // {
+      //   name         : 'error',
+      //   category     : 'action',
+      //   title        : 'error("Oops...")',
+      //   description  : 'Raises an error with the supplied message.',
+      // },
+      // {
+      //   name         : 'log',
+      //   category     : 'action',
+      //   title        : 'log("Info...")',
+      //   description  : 'Logs the specified message.',
+      // },
+      // {
+      //   name         : 'succeed_rate',
+      //   category     : 'action',
+      //   title        : 'succeed_rate(0.5)',
+      //   description  : 'Succeeds randomly at the specified rate, expressed as a number between 0 and 1.  For example, a rate of 0.25 will succeed one out of every 4 times on average.',
+      // },
+      // {
+      //   name         : 'done',
+      //   category     : 'action',
+      //   title        : 'done()',
+      //   description  : 'Stops the behavior tree.',
+      // },
     ];
 
     default_nodes.forEach(function(node_spec) {this.nodes.add(node_spec, true);}, this);
